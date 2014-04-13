@@ -17,14 +17,14 @@ a {
 
 h1 {
 	margin: 0;
-	padding: 6px 0px;
+	padding: 5px 0px;
 	font-size: 14pt;
 	font-weight: normal;
 	color: #555;
 }
 
 .container {
-	max-width: 800px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding: 0;
 	overflow: auto;		/* Clearfix */
@@ -33,24 +33,18 @@ h1 {
 nav img {
 	display: none;
 }
-
-nav {
-}
-
 nav h1 {
 	padding: 5px;
 	color: #555;
 }
-
 nav ul {
 	display: table;
-	background: #e9e9e9;
+	background: #eee;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	width: 100%;
 }
-
 nav ul li {
 	display: table-cell;
 	text-align: center;
@@ -58,26 +52,31 @@ nav ul li {
 	padding: 0;
 	width: 20%;
 }
-
 nav a {
 	display: inline-block;
 	width: 100%;
 	line-height: 20px;
 	margin: 0;
-	padding: 6px;
+	padding: 5px;
 	font-size: 14pt;
 	color: #555;
 }
-
 nav a:hover {
 	background: #ddd;
 }
 
+article {
+	padding: 5px;
+}
 blockquote {
 }
 
 /* For non-mobile devices */
 @media screen and (min-width: 800px) {
+	.container {
+		max-width: 800px;
+	}
+
 	nav {
 		position: fixed;
 		top: 0px;
@@ -99,8 +98,12 @@ blockquote {
 		width: 180px;
 		height: 180px;
 	}
+	
 	article {
-		margin-left: 200px;
+		position: relative;
+		padding: 0;
+		left: 200px;
+		width: 600px;
 	}
 	section {
 	}
