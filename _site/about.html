@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About Neeraj</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/main.css"></head>
+<body>
+	<div class="container">
+		<nav>
+			<h1><a href="/">Neeraj Wahi</a></h1>
+			<img src="/img/profile.jpg" />
+			<ul>
+				<!-- <li><a href="/about.html">About</a></li> -->
+				<li><a href="/blog.html">Blog</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<article id="about">
+	<header>
+	</header>
+	<div id="drawing" style="width: 550px; height: 550px">
+	</div>
+</article>
+
+<script type="text/javascript" src="svg.min.js" />
+<script>
+	var draw = SVG('drawing').size(300, 300)
+	var rect = draw.rect(100, 100).attr({ fill: '#f06' })
+</script>
+
+	</div>
+</body>
+</html>
